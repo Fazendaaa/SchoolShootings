@@ -1,0 +1,53 @@
+StateName	State	Capital	Lat	Long	CensusRegion	CensusRegionName	CensusDivision	CensusDivisionName	HouseSeats
+Alaska	AK	Juneau	58.301598	-134.420212	4	West	9	Pacific	1
+Alabama	AL	Montgomery	32.377716	-86.300568	3	South	6	East South Central	7
+Arkansas	AR	Little Rock	34.746613	-92.288986	3	South	7	West South Central	4
+Arizona	AZ	Phoenix	33.448143	-112.096962	4	West	8	Mountain	9
+California	CA	Sacramento	38.576668	-121.493629	4	West	9	Pacific	53
+Colorado	CO	Denver	39.739227	-104.984856	4	West	8	Mountain	7
+Connecticut	CT	Hartford	41.764046	-72.682198	1	Northeast	1	New England	5
+District of Columbia	DC	Washington	38.9136	-77.0132	3	South	5	South Atlantic	0
+Delaware	DE	Dover	39.157307	-75.519722	3	South	5	South Atlantic	1
+Florida	FL	Tallahassee	30.438118	-84.281296	3	South	5	South Atlantic	27
+Georgia	GA	Atlanta	33.749027	-84.388229	3	South	5	South Atlantic	14
+Hawaii	HI	Honolulu	21.307442	-157.857376	4	West	9	Pacific	2
+Iowa	IA	Des Moines	41.591087	-93.603729	2	Midwest	4	West North Central	4
+Idaho	ID	Boise	43.617775	-116.199722	4	West	8	Mountain	2
+Illinois	IL	Springfield	39.798363	-89.654961	2	Midwest	3	East North Central	18
+Indiana	IN	Indianapolis	39.768623	-86.162643	2	Midwest	3	East North Central	9
+Kansas	KS	Topeka	39.048191	-95.677956	2	Midwest	4	West North Central	4
+Kentucky	KY	Frankfort	38.186722	-84.875374	3	South	6	East South Central	6
+Louisiana	LA	Baton Rouge	30.457069	-91.187393	3	South	7	West South Central	6
+Massachusetts	MA	Boston	42.358162	-71.063698	1	Northeast	1	New England	9
+Maryland	MD	Annapolis	38.978764	-76.490936	3	South	5	South Atlantic	8
+Maine	ME	Augusta	44.307167	-69.781693	1	Northeast	1	New England	2
+Michigan	MI	Lansing	42.733635	-84.555328	2	Midwest	3	East North Central	14
+Minnesota	MN	St. Paul	44.955097	-93.102211	2	Midwest	4	West North Central	8
+Missouri	MO	Jefferson City	38.579201	-92.172935	2	Midwest	4	West North Central	8
+Mississippi	MS	Jackson	32.303848	-90.182106	3	South	6	East South Central	4
+Montana	MT	Helena	46.585709	-112.018417	4	West	8	Mountain	1
+North Carolina	NC	Raleigh	35.78043	-78.639099	3	South	5	South Atlantic	13
+North Dakota	ND	Bismarck	46.82085	-100.783318	2	Midwest	4	West North Central	1
+Nebraska	NE	Lincoln	40.808075	-96.699654	2	Midwest	4	West North Central	3
+New Hampshire	NH	Concord	43.206898	-71.537994	1	Northeast	1	New England	2
+New Jersey	NJ	Trenton	40.220596	-74.769913	1	Northeast	2	Mid-Atlantic	12
+New Mexico	NM	Santa Fe	35.68224	-105.939728	4	West	8	Mountain	3
+Nevada	NV	Carson City	39.163914	-119.766121	4	West	8	Mountain	4
+New York	NY	Albany	42.652843	-73.757874	1	Northeast	2	Mid-Atlantic	27
+Ohio	OH	Columbus	39.961346	-82.999069	2	Midwest	3	East North Central	16
+Oklahoma	OK	Oklahoma City	35.492207	-97.503342	3	South	7	West South Central	5
+Oregon	OR	Salem	44.938461	-123.030403	4	West	9	Pacific	5
+Pennsylvania	PA	Harrisburg	40.264378	-76.883598	1	Northeast	2	Mid-Atlantic	18
+Puerto Rico	PR	San Juan	18.4114	-66.0599					0
+Rhode Island	RI	Providence	41.830914	-71.414963	1	Northeast	1	New England	2
+South Carolina	SC	Columbia	34.000343	-81.033211	3	South	5	South Atlantic	7
+South Dakota	SD	Pierre	44.367031	-100.346405	2	Midwest	4	West North Central	1
+Tennessee	TN	Nashville	36.16581	-86.784241	3	South	6	East South Central	9
+Texas	TX	Austin	30.27467	-97.740349	3	South	7	West South Central	36
+Utah	UT	Salt Lake City	40.777477	-111.888237	4	West	8	Mountain	4
+Virginia	VA	Richmond	37.538857	-77.43364	3	South	5	South Atlantic	11
+Vermont	VT	Montpelier	44.262436	-72.580536	1	Northeast	1	New England	1
+Washington	WA	Olympia	47.035805	-122.905014	4	West	9	Pacific	10
+Wisconsin	WI	Madison	43.074684	-89.384445	2	Midwest	3	East North Central	8
+West Virginia	WV	Charleston	38.336246	-81.612328	3	South	5	South Atlantic	3
+Wyoming	WY	Cheyenne	41.140259	-104.820236	4	West	8	Mountain	1

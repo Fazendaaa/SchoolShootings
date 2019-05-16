@@ -92,5 +92,5 @@ CREATE TABLE SchoolShoots (
 
 SET datestyle = "ISO, MDY";
 COPY SchoolShoots 
-    FROM '..path\School-Shootings-Data.csv' CSV HEADER;
+    FROM './school-shootings-data.csv' CSV HEADER;
 SET datestyle = "ISO, DMY";

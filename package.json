@@ -5,12 +5,12 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack",
-    "injectData": "node ./dist/index.ts",
     "docs": "typedoc --out ./docs/ ./src/",
     "deploy": "ncu --upgrade && npm install",
     "lint": "tslint --config tslint.json --project .",
-    "test": "npm run deply && snyk test && npm run jest",
+    "test": "npm run deploy && snyk test && npm run jest",
     "start": "npm test && npm run build && npm run injectData",
+    "injectData": "node -e 'process.env.DATABASE=\"schoolshootings\"' ./dist/index.js",
     "jest": "jest --config jest.config.json --ci --runInBand --detectOpenHandles --no-cache"
   },
   "repository": {

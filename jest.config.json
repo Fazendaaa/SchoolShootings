@@ -1,0 +1,41 @@
+{
+    "bail": true,
+    "expand": true,
+    "verbose": true,
+    "useStderr": true,
+    "forceExit": true,
+    "testMatch": null,
+    "preset": "ts-jest",
+    "logHeapUsage": true,
+    "collectCoverage": true,
+    "name": "SchoolShootings",
+    "testEnvironment": "node",
+    "testURL": "http://localhost/",
+    "coverageDirectory": "./coverage",
+    "testRegex": "(./tests/.*| (\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "coverageReporters": [
+        "json",
+        "lcov",
+        "text"
+    ],
+    "coveragePathIgnorePatterns": [
+        "./dist/",
+        "./node_modules/"
+    ],
+    "moduleFileExtensions": [
+        "js",
+        "json",
+        "jsx",
+        "node",
+        "ts",
+        "tsx"
+    ],
+    "globals": {
+        "ts-jest": {
+            "diagnostics": {
+               "warnOnly": true
+            }
+        }
+    }
+  }
+  

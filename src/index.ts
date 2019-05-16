@@ -26,6 +26,9 @@ const main = async (): Promise<boolean> => {
 
     await client.connect();
 
+    /**
+     * https://github.com/brianc/node-pg-cursor/issues/9#issuecomment-109296720
+     */
     await client.query(loadSSUSAOne)
         .catch(console.error);
     await client.query(loadSSUSATwo)

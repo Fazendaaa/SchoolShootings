@@ -48,7 +48,7 @@ RUN git clone https://aur.archlinux.org/yay.git && \
 ARG DATABASE=schoolshootings
 RUN sudo -iu postgres && \
     initdb -D /var/lib/postgres/data && \
-    createuser --interactive && \
+    createuser --superuser --login image && \
     createdb ${DATABASE}
 
 ##

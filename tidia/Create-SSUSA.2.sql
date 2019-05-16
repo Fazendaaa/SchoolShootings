@@ -2,7 +2,6 @@
 -- Caetano Traina Júnior -- Maio de 2019 --------------------------------------------------------------
 -------------------------------------------------------------------------------------------------------
 
-DROP TABLE IF EXISTS SchoolShoots CASCADE;
 CREATE TABLE SchoolShoots (
     UID  NUMERIC(4),  --  Unique identifier
     nces_school_id CHAR(14), --  National Center for Education Statistics unique school ID
@@ -89,8 +88,3 @@ CREATE TABLE SchoolShoots (
                                -- 42, Rural, Distant Census-defined rural territory that is more than 5 miles but less than or equal to 25 miles from an urbanized area, as well as rural territory that is more than 2.5 miles but less than or equal to 10 miles from an urban cluster.
                                -- 43, Rural, Remote Census-defined rural territory that is more than 25 miles from an urbanized area and is also more than 10 miles from an urban cluster.
     );
-
-SET datestyle = "ISO, MDY";
-COPY SchoolShoots 
-    FROM '..path\School-Shootings-Data.csv' CSV HEADER;
-SET datestyle = "ISO, DMY";

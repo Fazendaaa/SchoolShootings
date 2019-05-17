@@ -11,20 +11,15 @@ import loadSSUSAFive from '../tidia/Create-SSUSA.5.sql';
 const asyncExec = promisify(exec);
 
 /**
- * Main
+ * Load SSUSA
  *
  * @description
- * Takes the data provided then injects it into to Postgres database
+ * Loads the SSUSA data into the DB
  *
  * @returns Whether or not the operation has been successfully completed
  */
-const main = async (): Promise<boolean> => {
-    const client = new Client({
-        user: process.env.USER,
-        database: process.env.DATABASE
-    });
-
-    await client.connect();
+const loadSSUSA = async (database: string, client: Client): Promise<boolean> => {
+    const csvFile = '/tmp/school-shootings-data.csv';
 
     /**
      * https://github.com/brianc/node-pg-cursor/issues/9#issuecomment-109296720
@@ -42,16 +37,43 @@ const main = async (): Promise<boolean> => {
      *
      * https://stackoverflow.com/a/40334795/7092954
      */
-    await asyncExec('psql -d schoolshootings -U farm -c \"COPY SchoolShoots FROM STDIN CSV HEADER\" < /tmp/school-shootings-data.csv')
+    await asyncExec(`psql -d ${database} -U farm -c \"COPY SchoolShoots \
+                     FROM STDIN CSV HEADER\" < ${csvFile}`);
 
     await client.query(loadSSUSAFive)
         .catch(console.error);
 
-    await client.query('SELECT * FROM SchoolShoots')
+    await client.query('COMMIT;')
+        .catch(console.error);
+
+    await client.query('SELECT * FROM SchoolShoots;')
         .then(console.log)
         .catch(console.error);
 
-        return true;
+    return true;
+};
+
+/**
+ * Main
+ *
+ * @description
+ * Takes the data provided then injects it into to Postgres database
+ *
+ * @returns Whether or not the operation has been successfully completed
+ */
+const main = async (): Promise<boolean> => {
+    const database = <string> process.env.DATABASE;
+    const client = new Client({
+        database,
+        user: process.env.USER
+    });
+
+    await client.connect();
+
+    loadSSUSA(database, client)
+        .catch(console.error);
+
+    return true;
 };
 
 main()

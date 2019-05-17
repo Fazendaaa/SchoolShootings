@@ -1,1 +1,1 @@
-SELECT * FROM WP
+SELECT * FROM SchoolShoots;

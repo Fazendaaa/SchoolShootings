@@ -1,1 +1,1 @@
-const lorem = 'ipsum';
+export const taskSix = 'taskSix';

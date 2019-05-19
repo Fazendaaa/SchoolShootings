@@ -1,1 +1,1 @@
-const c = 'c';
+export const taskSeven = 'taskSeven';

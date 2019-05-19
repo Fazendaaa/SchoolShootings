@@ -12,7 +12,7 @@
     "test": "npm run deploy && snyk test && npm run jest",
     "start": "npm test && npm run build && npm run injectData",
     "injectData": "DATABASE=schoolshootings node ./dist/index.js",
-    "jest": "jest --config jest.config.json --ci --runInBand --detectOpenHandles --no-cache"
+    "jest": "DATABASE=schoolshootings jest --config jest.config.json --ci --runInBand --detectOpenHandles --no-cache"
   },
   "repository": {
     "type": "git",

@@ -1,18 +1,22 @@
 import { Client } from 'pg';
 import { taskOne } from '../src/tasks/taskOne';
 
-const database = process.env.DATABASE;
 const client = new Client({
-    database,
-    user: process.env.USER
+    user: process.env.USER,
+    database: process.env.DATABASE
 });
 
-describe('Testing Task One', async () => {
+beforeAll(async () => {
     await client.connect();
+})
 
+describe('Testing Task One', () => {
     test('Only test', () => {
         expect(taskOne(client)).resolves
-            .toEqual(true)
+            .toEqual({
+                blackShooters: 40,
+                blackVictims: '84694'
+            })
             .catch(console.error);
     });
 });

@@ -46,10 +46,6 @@ const loadSSUSA = async (database: string, client: Client): Promise<boolean> => 
     await client.query('COMMIT;')
         .catch(console.error);
 
-    await client.query('SELECT * FROM SchoolShoots;')
-        .then(console.log)
-        .catch(console.error);
-
     return true;
 };
 

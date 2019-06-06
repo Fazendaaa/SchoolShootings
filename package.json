@@ -5,9 +5,9 @@
   "main": "./dist/index.js",
   "scripts": {
     "build": "webpack",
-    "copy": "cp ./tidia/*.csv /tmp/",
     "docs": "typedoc --out ./docs/ ./src/",
     "deploy": "ncu --upgrade && npm install",
+    "copy": "cp ./tidia/*.csv ./tidia/*.txt /tmp/",
     "lint": "tslint --config tslint.json --project .",
     "test": "npm run deploy && snyk test && npm run jest",
     "start": "npm test && npm run build && npm run injectData",

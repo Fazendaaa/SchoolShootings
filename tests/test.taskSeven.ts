@@ -12,7 +12,8 @@ beforeAll(async () => {
 
 describe('Testing Task Eight', () => {
     test('Only test', () => {
-        expect(taskSeven)
-            .toEqual('taskSeven');
+        expect(taskSeven(client)).resolves
+            .toEqual({})
+            .catch(console.error);
     });
 });

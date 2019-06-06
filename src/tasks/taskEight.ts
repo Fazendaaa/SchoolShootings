@@ -20,6 +20,7 @@ const greatCircleDistance = async (client: Client): Promise<QueryResult> =>
  */
 export const taskEight = async (client: Client): Promise<object> => {
     await greatCircleDistance(client);
+
     client.query('')
         .catch(console.error);
 

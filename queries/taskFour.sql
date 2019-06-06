@@ -1,4 +1,6 @@
---Mostre um comando em SQL que permita verificar se todos os dados estao consistentes para acrescentar a sigla dos estados na SchoolShoots. Cuidado com espacos em branco nos atributos.
+-- Mostre um comando em SQL que permita verificar se todos os dados estao
+-- consistentes para acrescentar a sigla dos estados na SchoolShoots. Cuidado
+-- com espacos em branco nos atributos.
 SELECT SchoolShoots.state, USStates.State, USStates.StateName FROM 
     SchoolShoots LEFT JOIN USStates ON 
     (SchoolShoots.state = USStates.StateName) LIMIT 20;

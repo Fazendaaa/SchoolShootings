@@ -10,7 +10,7 @@ beforeAll(async () => {
     await client.connect();
 })
 
-describe('Testing Task Eight', () => {
+describe('Testing Task Two', () => {
     test('Only test', () => {
         expect(taskTwo(client)).resolves
             .toEqual(16)
